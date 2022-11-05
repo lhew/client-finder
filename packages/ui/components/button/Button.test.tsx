@@ -7,4 +7,9 @@ describe("<Button />", () => {
     const { container } = render(<Button>Click me</Button>);
     expect(container).toBeInTheDocument();
   });
+
+  it("presents button without children", () => {
+    const { container } = render(<Button value="some value" />);
+    expect(container).toBeInTheDocument();
+  });
 });
