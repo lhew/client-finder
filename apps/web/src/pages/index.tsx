@@ -1,10 +1,8 @@
-import { useRouter } from "next/router";
+import * as React from "react";
 import { Layout } from "../components/layout";
 import { SearchBlock } from "../components/searchblock";
 
-export default function Web() {
-  const router = useRouter();
-
+const Home = () => {
   return (
     <Layout type="splash" withNavbar={false}>
       <div className="mt-[45vh] h-[5em] self-center">
@@ -18,4 +16,6 @@ export default function Web() {
       </div>
     </Layout>
   );
-}
+};
+
+export default Home;

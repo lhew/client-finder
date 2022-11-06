@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> renders correctly for standard layout (internal pages ,etc) 1`] = `
+<div>
+  <div
+    class="min-h-[100vh] w-full"
+  >
+    <div
+      class="fixed  top-0 w-full border-b-2 border-gray-400 bg-white"
+      data-testid="layout-navbar"
+    >
+      <div
+        class="align-center mx-[auto] grid max-w-5xl grid-cols-[1fr_20em] p-2"
+      >
+        <h1
+          class="pt-2.5 font-bold"
+        >
+          People Finder
+        </h1>
+        <form
+          class="grid w-full grid-cols-[1fr_auto] gap-2"
+          data-testid="search-form"
+        >
+          <input
+            class="rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 block w-full"
+            data-testid="search-input"
+            field="[object Object]"
+            form="[object Object]"
+            name="search"
+            placeholder="Search a person by name, quote, or title"
+            value=""
+          />
+          <button
+            class="w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300  sm:w-auto"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="mx-[auto] flex min-h-[100vh] flex-col max-w-5xl pt-[5em]"
+    >
+      <div
+        class="flex-1"
+      >
+        layout content - internal pages 
+      </div>
+      <footer
+        class="p-3 text-center text-xs text-gray-500"
+      >
+        Made by Leonardo Almeida
+      </footer>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Layout /> renders correctly in default mode 1`] = `
+<div>
+  <div
+    class="mx-auto grid h-[100vh] grid-rows-[1fr_20em]"
+  >
+    <div
+      class="mx-[auto] flex min-h-[100vh] flex-col w-3/5"
+    >
+      <div
+        class="flex-1"
+      >
+        layout content - slash screen
+      </div>
+      <footer
+        class="p-3 text-center text-xs text-gray-500"
+      >
+        Made by Leonardo Almeida
+      </footer>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,4 @@
 import React from "react";
-
 import classNames from "classnames";
 import { SearchBlock } from "../searchblock";
 
@@ -27,6 +26,7 @@ export const Layout = ({
     >
       {withNavbar && (
         <div
+          data-testid="layout-navbar"
           className={classNames(
             "fixed  top-0 w-full border-b-2 border-gray-400 bg-white"
           )}

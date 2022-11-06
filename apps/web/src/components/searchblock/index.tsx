@@ -1,6 +1,6 @@
 import React, { RefObject, useEffect, useRef } from "react";
 import { Button, Input } from "ui";
-import { Formik, Form, Field } from "formik";
+import { Formik, Field } from "formik";
 import classNames from "classnames";
 import { useRouter } from "next/router";
 
@@ -46,17 +46,20 @@ export const SearchBlock = ({
       {({ errors, handleSubmit, dirty }) => (
         <form
           ref={ref as RefObject<HTMLFormElement>}
+          data-testid="search-form"
           className="grid w-full grid-cols-[1fr_auto] gap-2"
           onSubmit={handleSubmit}
         >
           <Field
             name="search"
+            data-testid="search-input"
             placeholder="Search a person by name, quote, or title"
             autoFocus={autofocus}
             className={classNames("block w-full", {
               "border-red-400": errors.search && dirty,
             })}
             onKeyUp={(e: React.KeyboardEvent<HTMLInputElement>) => {
+              console.log(e.key);
               if (e.key === "Enter") {
                 handleSubmit();
               }
@@ -69,7 +72,10 @@ export const SearchBlock = ({
           </Button>
 
           {errors.search && showError && dirty && (
-            <small className={classNames("text-sm text-red-400")}>
+            <small
+              data-testid="search-errorlabel"
+              className={classNames("text-sm text-red-400")}
+            >
               {errors.search}
             </small>
           )}

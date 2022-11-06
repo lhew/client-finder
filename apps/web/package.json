@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "formik": "^2.2.9",
@@ -16,7 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ui": "*",
-    "config": "*"
+    "config": "*",
+    "types": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
