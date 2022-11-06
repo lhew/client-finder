@@ -4,6 +4,7 @@ module.exports = {
     "!**/*.d.ts",
     "!**/node_modules/**",
     "!**/**.stories.{tsx,js,ts}",
+    "!**/src/pages/_app.tsx",
   ],
 
   moduleNameMapper: {
@@ -23,7 +24,11 @@ module.exports = {
   },
   // Add more setup options before each test is run
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
-  testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/.next/"],
+  testPathIgnorePatterns: [
+    "<rootDir>/node_modules/",
+    "<rootDir>/.next/",
+    "<rootDir>/cypress/",
+  ],
   testEnvironment: "jsdom",
   transform: {
     "^.+\\.tsx?$": "esbuild-jest",
