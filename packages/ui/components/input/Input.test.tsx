@@ -5,7 +5,7 @@ import { Input } from ".";
 describe("<Input />", () => {
   it("renders correctly", () => {
     const { container } = render(
-      <Input type="text" value="foo" onChange={() => jest.fn()} />
+      <Input field={null} type="text" value="foo" onChange={() => jest.fn()} />
     );
     expect(container).toBeInTheDocument();
   });
