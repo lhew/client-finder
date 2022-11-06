@@ -42,8 +42,7 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "@changesets/cli": "^2.25.2",
-    "formik": "^2.2.9"
+    "@changesets/cli": "^2.25.2"
   },
   "packageManager": "npm@8.5.0"
 }
