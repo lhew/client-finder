@@ -6,6 +6,7 @@ This is a simple Client finder app.
 
 ## What's inside?
 
+
 This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
 
 ### Apps and Packages
@@ -18,6 +19,18 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
+
+
+### Develop
+
+To develop all apps and packages, run the following command:
+
+```
+npm run dev
+```
+
+
+### Storybook
 
 The packages "web" and "ui" contains its own storybook. Check them to see their components in isolation and access their development canvas.
 
@@ -51,10 +64,4 @@ To build all apps and packages, run the following command:
 npm run build
 ```
 
-### Develop
 
-To develop all apps and packages, run the following command:
-
-```
-npm run dev
-```
