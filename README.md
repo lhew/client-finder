@@ -1,6 +1,6 @@
-# People finder
+# Client finder
 
-This is a simple people finder app.
+This is a simple Client finder app.
 
 ## What's inside?
 
@@ -11,6 +11,9 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 - `docs`: a [Next.js](https://nextjs.org/) app to display architectural reference, diagrams, etc
 - `web`: another [Next.js](https://nextjs.org/) the web platform that users will interact with
 - `ui`: a stub React component library shared by both `web` and `docs` applications
+- `api`: a [Nest.js](https://nestjs.com/) API that will serve the data to the `web` app
+- `types`: a stub types package that will be used by the dependencies of the project
+- 
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 

@@ -1,5 +1,4 @@
 import React from "react";
-
 import classNames from "classnames";
 import { SearchBlock } from "../searchblock";
 
@@ -27,13 +26,13 @@ export const Layout = ({
     >
       {withNavbar && (
         <div
+          data-testid="layout-navbar"
           className={classNames(
             "fixed  top-0 w-full border-b-2 border-gray-400 bg-white"
           )}
         >
-          <div className="align-center mx-[auto] grid max-w-5xl grid-cols-[1fr_20em] p-2">
-            <h1 className="pt-2.5 font-bold">People Finder</h1>
-            <SearchBlock />
+          <div className="align-center mx-[auto] grid max-w-5xl grid-cols-[1fr_20em] px-2 py-4">
+            <h1 className="font-bold">Client Finder</h1>
           </div>
         </div>
       )}
@@ -48,7 +47,7 @@ export const Layout = ({
           }
         )}
       >
-        <div className="flex-1">{children}</div>
+        <div className="flex-1 px-2">{children}</div>
         <footer className="p-3 text-center text-xs text-gray-500">
           Made by Leonardo Almeida
         </footer>

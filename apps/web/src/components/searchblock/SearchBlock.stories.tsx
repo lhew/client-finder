@@ -11,5 +11,5 @@ const Template: ComponentStory<typeof SearchBlock> = (args) => (
   <SearchBlock {...args} />
 );
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Deprecated = Template.bind({});
+Deprecated.args = {};
