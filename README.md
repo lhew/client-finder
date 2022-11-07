@@ -29,6 +29,8 @@ To develop all apps and packages, run the following command:
 npm run dev
 ```
 
+This will run `app`, `docs` and `api` services in parallel on ports `3000`, `3001` and `3002` respectivelly, so be sure these ports are free.
+
 
 ### Storybook
 
