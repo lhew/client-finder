@@ -1,11 +1,12 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { PersonCard } from ".";
+import { ClientCard } from ".";
 
 export default {
-  title: "Building Blocks/PersonCard",
-  component: PersonCard,
+  title: "Building Blocks/ClientCard",
+  component: ClientCard,
   args: {
-    personData: {
+    clientData: {
+      id: "1",
       avatar:
         "https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Blank&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Gray01&eyeType=Surprised&eyebrowType=UpDown&mouthType=Twinkle&skinColor=Brown",
       name: "John Doe",
@@ -13,10 +14,10 @@ export default {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
   },
-} as ComponentMeta<typeof PersonCard>;
+} as ComponentMeta<typeof ClientCard>;
 
-const Template: ComponentStory<typeof PersonCard> = (args) => (
-  <PersonCard {...args} />
+const Template: ComponentStory<typeof ClientCard> = (args) => (
+  <ClientCard {...args} />
 );
 
 export const Primary = Template.bind({});

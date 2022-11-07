@@ -10,40 +10,20 @@ exports[`<Layout /> renders correctly for standard layout (internal pages ,etc) 
       data-testid="layout-navbar"
     >
       <div
-        class="align-center mx-[auto] grid max-w-5xl grid-cols-[1fr_20em] p-2"
+        class="align-center mx-[auto] grid max-w-5xl grid-cols-[1fr_20em] px-2 py-4"
       >
         <h1
-          class="pt-2.5 font-bold"
+          class="font-bold"
         >
-          People Finder
+          Client Finder
         </h1>
-        <form
-          class="grid w-full grid-cols-[1fr_auto] gap-2"
-          data-testid="search-form"
-        >
-          <input
-            class="rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 block w-full"
-            data-testid="search-input"
-            field="[object Object]"
-            form="[object Object]"
-            name="search"
-            placeholder="Search a person by name, quote, or title"
-            value=""
-          />
-          <button
-            class="w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300  sm:w-auto"
-            type="submit"
-          >
-            Search
-          </button>
-        </form>
       </div>
     </div>
     <div
       class="mx-[auto] flex min-h-[100vh] flex-col max-w-5xl pt-[5em]"
     >
       <div
-        class="flex-1"
+        class="flex-1 px-2"
       >
         layout content - internal pages 
       </div>
@@ -66,7 +46,7 @@ exports[`<Layout /> renders correctly in default mode 1`] = `
       class="mx-[auto] flex min-h-[100vh] flex-col w-3/5"
     >
       <div
-        class="flex-1"
+        class="flex-1 px-2"
       >
         layout content - slash screen
       </div>

@@ -1,14 +1,14 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import { PersonCard } from ".";
+import { render, screen, fireEvent } from "@testing-library/react";
+import { ClientCard } from ".";
 
-describe("<PersonCard />", () => {
+describe("<ClientCard />", () => {
   it("renders correctly", () => {
     const onClick = jest.fn();
     render(
-      <PersonCard
+      <ClientCard
         onClick={onClick}
-        personData={{
+        clientData={{
           id: "1",
           name: "foo",
           title: "bar",
@@ -17,7 +17,7 @@ describe("<PersonCard />", () => {
       />
     );
 
-    fireEvent.click(screen.getByTestId("person-card-1"));
+    fireEvent.click(screen.getByTestId("client-card-1"));
     expect(onClick).toBeCalled();
   });
 });
